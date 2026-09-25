@@ -1,4 +1,5 @@
 <p align="center">
+  <a href="https://skills.sh/sakthiveltofficial/ai-native-sdlc"><img src="https://skills.sh/b/sakthiveltofficial/ai-native-sdlc" alt="skills.sh"/></a>
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"/>
   <img src="https://img.shields.io/badge/Agent--Agnostic-✓-success" alt="Agent Agnostic"/>
   <img src="https://img.shields.io/badge/Plays-12-orange" alt="12 Plays"/>
@@ -77,12 +78,24 @@ Start with any top-row play that addresses your biggest bottleneck.
 
 ---
 
-## How to Use It
+## Installation
 
-### With Claude Code / Antigravity
+### Via skills.sh CLI (Recommended)
+
+Install directly into your coding agent using the `skills` CLI:
 
 ```bash
-# Clone into your global skills directory
+# Add to your current default agent
+npx skills add sakthiveltofficial/ai-native-sdlc
+
+# Or target a specific agent (e.g. Claude Code)
+npx skills add sakthiveltofficial/ai-native-sdlc --agent claude-code --yes
+```
+
+### Manual Installation
+
+```bash
+# Clone into your global skills directory (Antigravity / Claude Code)
 git clone https://github.com/sakthiveltofficial/ai-native-sdlc \
   ~/.gemini/config/skills/ai-native-sdlc
 
@@ -90,8 +103,6 @@ git clone https://github.com/sakthiveltofficial/ai-native-sdlc \
 git clone https://github.com/sakthiveltofficial/ai-native-sdlc \
   .agents/skills/ai-native-sdlc
 ```
-
-The skill auto-activates when you ask about `AGENT.md`, `intent.md`, `spec.md`, hooks, evals, PR review loops, or closing the production feedback loop.
 
 ### With Any Other Agent
 

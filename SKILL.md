@@ -1,13 +1,12 @@
 ---
 name: ai-native-sdlc
 description: >
-  End-to-end playbook for running an AI-native Software Development Lifecycle (SDLC).
-  Covers all six stages — Plan, Design, Build, Test, Deploy, Maintain — with concrete
-  plays, artifact conventions, governance patterns, and measurement guidance.
-  Generic: works with any AI coding agent (Claude Code, Copilot, Cursor, Aider, etc.).
-  Activate when the user asks about AI-native SDLC, agentic engineering workflows,
-  AGENT.md, intent.md, spec.md, plan.md, hooks as gates, evals in CI, or
-  closing the feedback loop on production metrics.
+  AI-native software development lifecycle playbook for coding agents and engineering teams.
+  Covers intent capture, requirements and design, plan mode, AGENT.md, skills, subagents,
+  feedback loops, E2E testing, continuous evals, AI PR review, approval gates, CI/CD,
+  deployment, and production feedback loops. Use when planning or implementing an
+  AI-native SDLC, agentic software engineering workflow, AI-assisted development process,
+  coding-agent workflow, or engineering governance system.
 ---
 
 # AI-Native SDLC Playbook
