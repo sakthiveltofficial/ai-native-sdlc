@@ -30,6 +30,51 @@ It covers 12 plays across 6 stages:
 | **5 · Deploy** | AI PR review, Hooks as approval gates, CI/CD integration |
 | **6 · Maintain** | Closing the loop on metrics → back to `intent.md` |
 
+### Shifting the Bottleneck
+
+![Build Bottleneck Moved](assets/fig-bottleneck-moved.png)
+
+When AI agents take on software generation, the build stage collapses from weeks to minutes — shifting human effort to intent capture, architectural review, and governance.
+
+---
+
+## The Line vs. The Loop
+
+![Traditional Line vs AI-Native Loop](assets/fig-line-vs-loop.png)
+
+Traditional software development operates as a slow linear pipeline where every cycle back is a new release project. AI-native development operates as a continuous high-velocity loop, with humans operating above the loop to direct, evaluate, and govern autonomous agents.
+
+---
+
+## Play Dependency Graph
+
+![Play Dependency Graph](assets/fig-play-dependency-graph.png)
+
+```
+No prerequisites (start here):
+  Capture intent   AGENT.md   Skills   Feedback loop   Hooks   Plan mode
+
+Needs AGENT.md (+ feedback loop helps):
+  Parallel sessions & subagents
+
+Needs AGENT.md + feedback loop:
+  Continuous evals
+
+Needs capture intent + skills:
+  Requirements & design
+
+Needs evals + subagents (skills help):
+  AI PR review
+
+Needs PR review + hooks:
+  CI/CD integration
+
+Needs CI/CD + capture intent:
+  Closing the loop on metrics
+```
+
+Start with any top-row play that addresses your biggest bottleneck.
+
 ---
 
 ## How to Use It
@@ -59,6 +104,10 @@ Point your agent's skill / system-prompt loading mechanism at `SKILL.md`. The YA
 ```
 ai-native-sdlc/
 ├── SKILL.md                               ← Entry point — load this first
+├── assets/
+│   ├── fig-bottleneck-moved.png           Visual: Build phase bottleneck diagram
+│   ├── fig-line-vs-loop.png               Visual: Traditional vs AI-Native SDLC loop
+│   └── fig-play-dependency-graph.png      Visual: 12-play dependency graph
 ├── references/
 │   ├── 01-capture-intent.md               Stage 1 · Plan
 │   ├── 02-requirements-and-design.md      Stage 2 · Design
@@ -91,35 +140,6 @@ intent.md → spec.md → plan.md → diff + tests → PR + review → incident 
     ↑                                                                  │
     └─────────── production breach writes the next intent.md ─────────┘
 ```
-
----
-
-## Play Dependency Graph
-
-```
-No prerequisites (start here):
-  Capture intent   AGENT.md   Skills   Feedback loop   Hooks   Plan mode
-
-Needs AGENT.md (+ feedback loop helps):
-  Parallel sessions & subagents
-
-Needs AGENT.md + feedback loop:
-  Continuous evals
-
-Needs capture intent + skills:
-  Requirements & design
-
-Needs evals + subagents (skills help):
-  AI PR review
-
-Needs PR review + hooks:
-  CI/CD integration
-
-Needs CI/CD + capture intent:
-  Closing the loop on metrics
-```
-
-Start with any top-row play that addresses your biggest bottleneck.
 
 ---
 
