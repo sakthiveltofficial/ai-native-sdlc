@@ -1,0 +1,73 @@
+# REVIEW.md — Starter Template
+
+> Place at the repo root. The agent reads this file when acting as a PR reviewer.
+> Customise the scope, findings format, and skill list for your repository.
+
+---
+
+# PR Review Policy
+
+## Scope
+
+Review all changes to source files in `<src/ or your main source path>`.
+Exclude: `<generated file directories, e.g., src/gen/, dist/, __pycache__/>`.
+Do not report findings already enforced by the linter or formatter in CI.
+
+---
+
+## Plan alignment check
+
+If a `plan.md` exists for this change (look for a file named `plan.md` on
+the branch or referenced in the PR description), verify the diff matches it.
+Flag any departure from the plan as **IMPORTANT** with the specific discrepancy.
+
+---
+
+## Findings format
+
+Use this structure for every finding:
+
+```
+**[IMPORTANT | Nit]** `path/to/file.ext` line N
+> Quote the relevant line(s).
+One sentence explaining the issue and the policy or principle it violates.
+If IMPORTANT: one sentence suggesting the smallest fix.
+```
+
+---
+
+## What IMPORTANT means
+
+Reserve **IMPORTANT** for findings that would:
+- Break observable behavior
+- Leak data or credentials
+- Breach a stated security, compliance, or architecture policy
+
+Style preferences, naming conventions, and formatting are **Nit**.
+
+---
+
+## Nit cap
+
+Report at most **5 nits** per review. Summarize the rest as a count:
+*"N additional nits suppressed — run the linter for the full list."*
+
+---
+
+## Skills to apply
+
+Apply the following skills as review criteria. Reference each by name if a
+finding relates to it:
+
+- `<skill-name>` — `<e.g., security-policy>`
+- `<skill-name>` — `<e.g., hexagonal-architecture>`
+- `<skill-name>` — `<e.g., api-versioning>`
+
+---
+
+## Verdict line
+
+End every review with a verdict line:
+
+- ✅ **Ready for human review.** No IMPORTANT findings.
+- ⚠️ **Address IMPORTANT findings before human review.** `N` findings listed above.

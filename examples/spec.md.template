@@ -1,0 +1,76 @@
+# spec.md — Starter Template
+
+> Created at Stage 2: Design. Commit alongside intent.md to trigger Stage 3: Build.
+> The product owner signs off before this is committed.
+
+---
+
+# Spec: [Title — matches intent.md]
+
+## Intent reference
+
+Commit SHA or link to the `intent.md` this spec derives from: `<sha-or-link>`
+
+---
+
+## Requirements
+
+*Numbered. Each requirement is traceable to a source in intent.md.*
+
+1. **REQ-01:** `<Requirement statement>` *(Source: intent.md § Desired outcome)*
+2. **REQ-02:** `<Requirement statement>` *(Source: intent.md § Constraints)*
+3. **REQ-03:** `<Requirement statement>` *(Source: intent.md § Problem)*
+
+---
+
+## Design decisions
+
+*For each significant decision: the options considered, the choice, and the reason.*
+
+### Decision 1: [Topic]
+
+| Option | Considered? | Chosen? |
+|--------|-------------|---------|
+| `<Option A>` | ✅ | ✅ |
+| `<Option B>` | ✅ | ❌ |
+
+**Reason:** `<Why option A was chosen. Reference any constraints that ruled out B.>`
+
+---
+
+## Constraints applied
+
+*List the skills / policies applied and how they shaped the design.*
+
+| Skill / Policy | Version | Effect on this spec |
+|----------------|---------|---------------------|
+| `<skill-name>` | `<v1.2>` | `<How it constrained the design>` |
+| `<policy-id>` | — | `<How it constrained the design>` |
+
+---
+
+## Areas of concern
+
+*Numbered. Each names the conflict or gap, the owner, and the resolution or deferral.*
+
+1. `<Concern description>` — Owner: `<name>` — Resolution: `<resolved / deferred to <date>>`
+2. `<Concern description>` — Owner: `<name>` — Resolution: `<resolved / deferred to <date>>`
+
+---
+
+## Out of scope
+
+*Explicit list of what this change does NOT address.*
+
+- `<item>`
+- `<item>`
+
+---
+
+## Acceptance criteria
+
+*Testable statements. These become the basis for the eval suite (Stage 4).*
+
+- AC-01: `<Given X, when Y, then Z.>`
+- AC-02: `<Given X, when Y, then Z.>`
+- AC-03: `<Given X, when Y, then Z.>`

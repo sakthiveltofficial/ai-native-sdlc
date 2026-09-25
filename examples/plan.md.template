@@ -1,0 +1,61 @@
+# plan.md — Starter Template
+
+> Created at Stage 3: Build. Commit this before any code is generated.
+> Update in the same commit if implementation departs from the plan.
+
+---
+
+# Plan: [Title] (from intent.md [date])
+
+## Spec reference
+
+Commit SHA or link to the `spec.md` this plan implements: `<sha-or-link>`
+
+---
+
+## Files that change
+
+| File | Status | Notes |
+|------|--------|-------|
+| `<path/to/file.ext>` | New | `<what this file does>` |
+| `<path/to/file.ext>` | Modified | `<what changes and why>` |
+| `<path/to/file.ext>` | Deleted | `<why removed>` |
+
+---
+
+## Order of work
+
+*Each step is independently verifiable. Do not proceed to the next until the current passes.*
+
+1. `<Step 1 — e.g., Add the endpoint behind existing auth.>`
+2. `<Step 2 — e.g., Build the UI component against the endpoint.>`
+3. `<Step 3 — e.g., Wire the component into the nav.>`
+
+---
+
+## Risks
+
+*What this change could break, and how each risk is mitigated.*
+
+| Risk | Mitigation |
+|------|-----------|
+| `<Risk description>` | `<How it is mitigated or detected>` |
+
+---
+
+## Proof
+
+*The tests that prove the change works. Must cover all acceptance criteria from spec.md.*
+
+| Test file | What it covers | AC covered |
+|-----------|---------------|------------|
+| `<path/to/test_file.ext>` | `<Description of cases>` | AC-01, AC-02 |
+
+---
+
+## Departures from plan
+
+*Updated in the same commit when implementation diverges. Leave blank until it does.*
+
+| Step | Original plan | Actual implementation | Reason |
+|------|--------------|----------------------|--------|

@@ -1,0 +1,46 @@
+# AGENT.md — Starter Template
+
+> Copy this to your repository root as `AGENT.md` (or `CLAUDE.md` for Claude Code,
+> `.github/copilot-instructions.md` for GitHub Copilot, etc.).
+> Fill in the placeholders, then check it in and treat it like code.
+
+---
+
+# [Service / Repository Name]
+
+## Commands
+
+- **Build:** `<build command>`
+- **Test (unit):** `<unit test command>`
+- **Test (integration):** `<integration test command>` *(needs `<prerequisite, e.g. Docker>`)*
+- **Lint / Format:** `<lint command>` *(runs in CI — fix before pushing)*
+
+## Conventions
+
+- **Language & version:** `<e.g. Python 3.12, Java 21, Node 22>`
+- **Key libraries:** `<list the ones engineers must not replace>`
+- **Forbidden patterns:** `<e.g. No new Lombok. Money is always Decimal, never float.>`
+- **Every `<endpoint type>` needs an `<integration test>` in `<test directory>`.**
+
+## Architecture
+
+- `api/` — REST controllers / GraphQL resolvers
+- `core/` — domain logic (zero imports from `adapters/` or `api/`)
+- `adapters/` — database, message broker, external HTTP clients
+- `<schema path>/` — generated files; **never edit generated classes directly**
+
+## Things the agent gets wrong
+
+- Do not bump dependency versions — the platform team owns them.
+- The legacy `<path>/` package is frozen; new code goes in `<new path>/`.
+- `<Any repeated mistake your team has observed and corrected.>`
+
+## Verifying your work
+
+Run all three before reporting any task complete, and paste the output:
+
+- `<build command>` — must finish with `"<expected success message>"`
+- `<test command>` — all green; never skip or delete a failing test
+- `<lint command>` — zero warnings
+
+If a test fails, fix the code, not the test.

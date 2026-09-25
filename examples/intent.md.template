@@ -1,0 +1,58 @@
+# intent.md — Starter Template
+
+> Created at Stage 1: Plan. Commit this to trigger Stage 2: Design.
+> Fill in all sections. Open questions must be resolved before Stage 2 begins.
+
+---
+
+# Intent: [Short descriptive title]
+
+## Problem
+
+*One paragraph. What is broken or missing, and who feels it.*
+
+---
+
+## Desired outcome
+
+*What success looks like from the user's or operator's perspective.
+Measurable where possible — e.g., "Users can check claim status without
+calling support; support ticket volume for claim status drops by X%."*
+
+---
+
+## Affected systems
+
+*List the services, repositories, or data stores likely in scope.*
+
+- `<service-name>` — `<brief description of involvement>`
+- `<repo-name>` — `<what changes here>`
+
+---
+
+## Constraints
+
+*Regulatory, contractual, or architectural limits that cannot be negotiated.*
+
+- `<e.g., Must comply with GDPR Article 17 for data deletion.>`
+- `<e.g., Cannot modify the legacy v1/ API — only v2/ is in scope.>`
+
+---
+
+## Open questions
+
+*Numbered. Each question names the person or team who can resolve it.
+All questions must be resolved or explicitly deferred before Stage 2.*
+
+1. `<Question>` — Owner: `<name / team>`
+2. `<Question>` — Owner: `<name / team>`
+
+---
+
+## Source references
+
+*Links or IDs to the tickets, user interviews, or incidents this synthesizes.*
+
+- Ticket: `<ticket-id>` — `<brief description>`
+- Incident: `<incident-id>` — `<brief description>`
+- Interview notes: `<link>`
